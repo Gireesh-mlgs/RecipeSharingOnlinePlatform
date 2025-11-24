@@ -253,10 +253,3 @@ This ensures your React app communicates with the backend correctly.
 
 ---
 
-If you want, I can also:
-✔ Add screenshots
-✔ Add badges (Repo size, stars, tech stack)
-✔ Add project description + features section
-✔ Add installation GIF/flowchart
-
-Just tell me!
