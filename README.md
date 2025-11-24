@@ -1,191 +1,247 @@
-RecipeSharing – Recipe Sharing online platform 
+🍳 Online Recipe Sharing Platform
 
-RecipeHub is a full-stack recipe sharing platform where users can upload recipes, browse dishes, rate & comment, and interact with the community. Admins can manage users, recipes, and maintain a clean platform.
+A full-stack MERN web application where users can share recipes, discover new dishes, rate & comment, and manage their profiles, while administrators handle user management, recipe moderation, and system settings through a dedicated dashboard.
 
-The project uses Java (Servlets + JDBC) for backend processing and Node.js + JavaScript for additional API operations and interactive components.
+📘 Project Summary
 
-⭐ Features
-For Users
+The Online Recipe Sharing Platform provides an interactive space for cooking enthusiasts to upload recipes, interact with others through ratings and comments, and browse a variety of dishes.
+Admins are provided advanced tools to manage users, content, and system configurations.
 
-Create an account and log in
+Each user type has its own dedicated dashboard for easy navigation and role-based access.
 
-Add recipes with ingredients, steps, and optional image
+🎯 Key Features
+👨‍🍳 User Features
 
-Search recipes by name, ingredient, or category
+Share recipes (title, ingredients, steps, photos)
 
-Rate & comment on recipes
+Discover recipes using search and filters
 
-View, edit, or delete own recipes
+Rate and comment on recipes
 
-User-friendly UI with JavaScript interactions
+Edit or delete personal recipes
 
-For Admin
+Track recipe approval status (Pending/Approved/Rejected)
 
-Manage user accounts
+Manage personal profile (name, email, password)
 
-Approve / reject submitted recipes
+View complete activity history
 
-Moderate comments and ratings
+🛡️ Admin Features
 
-View all recipes in a dashboard
+Manage users (create/update/delete roles)
 
-Access high-level platform activity data
+Approve or reject recipes submitted by users
 
-🛠️ Tech Stack
-Backend
+Review recipe details and content
 
-Java Servlets
+Manage system-wide settings
 
-JDBC (MySQL)
+View recipe statistics (graphs & data trends)
 
-Node.js (supporting API modules / JS operations)
+Monitor user activities in real-time
 
+Moderate comments & interactions
+
+📊 Dashboards
+🧑‍🍳 User Dashboard
+
+My Recipes
+
+Discover Recipes
+
+Ratings & Comments
+
+Profile Settings
+
+Recipe Sharing History
+
+🛠️ Admin Dashboard
+
+User Management Table
+
+Recipe Approval Center
+
+System Settings Manager
+
+Recipe Analytics & Trends
+
+Real-Time Activity Monitor
+
+🧱 Tech Stack
 Frontend
 
-HTML5, CSS3
+React.js
 
-JavaScript
+HTML5, CSS3, JavaScript
 
-JSP pages
+Bootstrap / Chakra UI
 
-Database
+Axios
 
-MySQL
+Backend
 
-Tables typically include:
+Node.js
 
-users
+Express.js
 
-recipes
+MongoDB + Mongoose
 
-comments
+JWT Authentication
 
-ratings
+bcrypt
 
-Server
+Multer
 
-Apache Tomcat 9/10
+MVC Architecture
 
-Node.js runtime
+Tools
 
-🚀 How to Run the Java Server (Tomcat)
-It can also run by Vs code by using Index.js (Run)
-//Or you use node index.js
+Git & GitHub
 
-1. Requirements
+MongoDB Compass / Atlas
 
-JDK 8+
+Postman
 
-Apache Tomcat 9 or 10
+VS Code
 
-MySQL server
+⚙️ How to Run the Project (REAL SETUP)
 
-IDE (IntelliJ / Eclipse / VS Code with Java support)
+Below are the actual, correct steps to run your real MERN project.
 
-2. Import the Project
-
-Open IDE → Import as Dynamic Web Project / Java Web Application
-
-Add Apache Tomcat as the server runtime
-
-3. Configure Database
-
-Update your DB credentials in your connection class (e.g., DBConnection.java):
-
-String url = "jdbc:mysql://localhost:3306/recipehub";
-String username = "root";
-String password = "your_password";
+1️⃣ Clone the Repository
+git clone <(https://github.com/Gireesh-mlgs/RecipeSharingOnlinePlatform)>
+cd project
 
 
-Run SQL script:
+You should now see:
 
-mysql -u root -p recipehub < sql/schema.sql
+/frontend
+/backend
 
-4. Deploy on Tomcat
+2️⃣ Backend Setup (Node + Express + MongoDB)
+Step 1 — Navigate to Backend
+cd backend
 
-Right-click project → Run on Server → Select Tomcat
-
-Or build .war → place in TOMCAT/webapps/
-
-5. Access the App
-http://localhost:8080/RecipeHub
-
-⚙️ How to Run the Node.js Components
-
-Only include this if your project actually has Node modules. If you want, I can adjust this section to match your exact Node folder.
-
-1. Requirements
-
-Node.js v16+
-
-npm package manager
-
-2. Navigate to Node Directory
-cd node
-
-3. Install Dependencies
+Step 2 — Install dependencies
 npm install
 
-4. Run Node Server
-node server.js
+Step 3 — Create .env file inside /backend
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/recipehub
+JWT_SECRET=yourSuperSecretKey
 
 
-If you are using nodemon:
+If using MongoDB Atlas, replace the URI accordingly.
 
-npx nodemon server.js
-
-5. Typical Usage
-
-Node.js may be used for:
-
-Additional APIs
-
-Image processing
-
-Form validation
-
-Server-side JS helpers
-
-Ajax endpoints
-
-Interaction example:
-
-http://localhost:5000/api/recipes
+Step 4 — Start backend
+npm start
 
 
-Update the port number if different in your server.js.
+Backend runs at:
 
-🔄 Core Java Concepts Demonstrated
+👉 http://localhost:5000
 
-(For academic evaluation)
+If CORS errors occur, ensure backend includes:
 
-Encapsulation, OOP, interfaces
+app.use(cors());
 
-Collections (List, Map)
+3️⃣ Frontend Setup (React)
+Step 1 — Navigate to frontend
+cd ../frontend
 
-Exception handling
+Step 2 — Install dependencies
+npm install
 
-JDBC CRUD operations
+Step 3 — Start the frontend
+npm start
 
-Servlet lifecycle (doGet, doPost)
 
-Session management (login auth)
+Frontend runs at:
 
-📌 Team
+👉 http://localhost:3000
 
-Team Name: Legacy
-Project Number: 7
+4️⃣ Connect Frontend to Backend
 
-Members:
+In frontend/src/api.js, make sure the API base URL is:
 
-Harsh Sharma
+const api = axios.create({
+  baseURL: "http://localhost:5000",
+});
 
-Gireesh Kumar
 
-Gireesh Kumar
+This ensures all requests are sent to your backend.
 
-Happy Garg
+🗂️ Project Structure
+project/
+│
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── middleware/
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   ├── .env
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── .env
+│   └── package.json
+│
+└── README.md
 
-📄 License
+📸 Screenshots (Add as needed)
 
-You can choose MIT, Apache, or keep it unlicensed for now.
+You may add:
+
+Login Screen
+
+User Dashboard
+
+Recipe Upload Page
+
+Recipe Details Page
+
+Admin Dashboard
+
+Approval Panel
+
+
+🔗 API Endpoints (Sample)
+Authentication
+POST /auth/register
+POST /auth/login
+
+Recipes
+GET /recipes
+POST /recipes
+PUT /recipes/:id
+DELETE /recipes/:id
+
+Admin
+GET /admin/users
+PUT /admin/recipes/:id/approve
+
+🧪 Testing
+
+Backend API validated via Postman
+
+UI tested manually
+
+Token-based protected route testing
+
+MongoDB data validation
+
+🤝 Contributing
+
+ TEAM LEGACY
+
+ GIREESH KUMAR 24SCSE1180661
+ HARSH SHARMA 24SCSE1180531
+ HAPPY GARG 24SCSE1180669
+
+📬 Contact
+
+📧 Email: singhishu1@icloud.com
