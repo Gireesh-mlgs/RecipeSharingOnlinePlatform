@@ -106,13 +106,13 @@ This folder should contain:
 '/backend'
 
 #2️⃣ Backend Setup (Node + Express + MongoDB)
-*Step 1 — Navigate to Backend
-*cd backend
+*Step 1 — Navigate to Backend*
+*cd backend*
 
-*Step 2 — Install Dependencies
-*npm install
+*Step 2 — Install Dependencies*
+*npm install*
 
-*Step 3 — Create .env File in /backend
+*Step 3 — Create .env File in /backend*
 'PORT=5000'
 'MONGO_URI=mongodb://localhost:27017/recipehub'
 'JWT_SECRET=yourSuperSecretKey'
@@ -120,11 +120,11 @@ This folder should contain:
 
 If using MongoDB Atlas, replace MONGO_URI with your Atlas connection string.
 
-*Step 4 — Start Backend Server
+*Step 4 — Start Backend Server*
 'npm start'
 
 
-*Backend URL:
+*Backend URL:*
 👉 http://localhost:5000
 
 If you face CORS errors, ensure you have:
@@ -132,13 +132,13 @@ If you face CORS errors, ensure you have:
 'app.use(cors());'
 
 #3️⃣ Frontend Setup (React)
-*Step 1 — Navigate to Frontend
+*Step 1 — Navigate to Frontend*
 'cd ../frontend'
 
-*Step 2 — Install Dependencies
+*Step 2 — Install Dependencies*
 'npm install'
 
-*Step 3 — Start Frontend
+*Step 3 — Start Frontend*
 'npm start'
 
 
@@ -160,7 +160,7 @@ const api = axios.create({
 
 This ensures your React app communicates correctly with the backend API.
 
-🔗 API Endpoints (Sample)
+*🔗 API Endpoints (Sample)*
 Authentication
 POST /auth/register
 POST /auth/login
@@ -175,7 +175,7 @@ Admin
 GET /admin/users
 PUT /admin/recipes/:id/approve
 
-🧪 Testing
+*🧪 Testing*
 
 Backend API tested using Postman
 
@@ -186,7 +186,7 @@ Token-based route testing
 MongoDB CRUD operation validation
 
 #🤝 Contributing
-*TEAM LEGACY
+*TEAM LEGACY*
 
 Gireesh Kumar — 24SCSE1180661
 
@@ -197,3 +197,4 @@ Happy Garg — 24SCSE1180669
 *📬 Contact
 
 📧 Email: singhishu1@icloud.com
+
