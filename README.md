@@ -1,122 +1,110 @@
-🍳 Online Recipe Sharing Platform
+# 🍳 Online Recipe Sharing Platform
 
-A full-stack MERN web application where users can share recipes, discover new dishes, rate & comment, and manage their profiles, while administrators handle user management, recipe moderation, and system settings through a dedicated dashboard.
+A full-stack **MERN** web application where users can share recipes, discover new dishes, rate & comment, and manage their profiles — while administrators handle user management, recipe moderation, and system settings through a dedicated dashboard.
 
-📘 Project Summary
+---
 
-The Online Recipe Sharing Platform provides an interactive space for cooking enthusiasts to upload recipes, interact with others through ratings and comments, and browse a variety of dishes.
-Admins are provided advanced tools to manage users, content, and system configurations.
+## 📘 Project Summary
 
-Each user type has its own dedicated dashboard for easy navigation and role-based access.
+The Online Recipe Sharing Platform provides an interactive space for cooking enthusiasts to:
 
-🎯 Key Features
-👨‍🍳 User Features
+- Upload recipes  
+- Discover recipes created by others  
+- Interact through ratings & comments  
+- Manage personal profiles and activities  
 
-Share recipes (title, ingredients, steps, photos)
+Administrators can:
 
-Discover recipes using search and filters
+- Manage users  
+- Moderate recipes  
+- Oversee platform settings  
+- Track activity and analytics  
 
-Rate and comment on recipes
+Each role has a **dedicated dashboard** with role-specific tools.
 
-Edit or delete personal recipes
+---
 
-Track recipe approval status (Pending/Approved/Rejected)
+# 🎯 Key Features
 
-Manage personal profile (name, email, password)
+## 👨‍🍳 User Features
+- Share recipes (title, ingredients, steps, photos)
+- Discover recipes using search & filters
+- Rate and comment on recipes
+- Edit or delete personal recipes
+- Track recipe approval status (Pending/Approved/Rejected)
+- Manage personal profile (name, email, password)
+- View activity history (shared recipes, comments, ratings)
 
-View complete activity history
+## 🛡️ Admin Features
+- Manage users (create/update/delete roles)
+- Approve or reject submitted recipes
+- Review recipe details & images
+- Manage system-wide settings
+- View recipe statistics and performance graphs
+- Monitor real-time user activities
+- Moderate comments & interactions
 
-🛡️ Admin Features
+---
 
-Manage users (create/update/delete roles)
+# 📊 Dashboards
 
-Approve or reject recipes submitted by users
+## 🧑‍🍳 User Dashboard Includes:
+- My Recipes  
+- Discover Recipes  
+- Ratings & Comments  
+- Profile Settings  
+- Recipe Sharing History  
 
-Review recipe details and content
+## 🛠️ Admin Dashboard Includes:
+- User Management Table  
+- Recipe Approval Center  
+- System Settings Manager  
+- Recipe Analytics & Trends  
+- Real-Time Activity Monitor  
 
-Manage system-wide settings
+---
 
-View recipe statistics (graphs & data trends)
+# 🧱 Tech Stack
 
-Monitor user activities in real-time
+## Frontend
+- React.js  
+- HTML5, CSS3, JavaScript  
+- Bootstrap / Chakra UI  
+- Axios  
 
-Moderate comments & interactions
+## Backend
+- Node.js  
+- Express.js  
+- MongoDB + Mongoose  
+- JWT Authentication  
+- bcrypt  
+- Multer (File Uploads)  
+- MVC Architecture  
 
-📊 Dashboards
-🧑‍🍳 User Dashboard
+## Tools
+- Git & GitHub  
+- MongoDB Compass / Atlas  
+- Postman  
+- VS Code  
 
-My Recipes
+---
 
-Discover Recipes
+# ⚙️ How to Run the Project (REAL SETUP)
 
-Ratings & Comments
+Below are the actual, correct steps required to run your MERN project locally.
 
-Profile Settings
+## 1️⃣ Clone the Repository
 
-Recipe Sharing History
-
-🛠️ Admin Dashboard
-
-User Management Table
-
-Recipe Approval Center
-
-System Settings Manager
-
-Recipe Analytics & Trends
-
-Real-Time Activity Monitor
-
-🧱 Tech Stack
-Frontend
-
-React.js
-
-HTML5, CSS3, JavaScript
-
-Bootstrap / Chakra UI
-
-Axios
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB + Mongoose
-
-JWT Authentication
-
-bcrypt
-
-Multer
-
-MVC Architecture
-
-Tools
-
-Git & GitHub
-
-MongoDB Compass / Atlas
-
-Postman
-
-VS Code
-
-⚙️ How to Run the Project (REAL SETUP)
-
-Below are the actual, correct steps to run your real MERN project.
-
-1️⃣ Clone the Repository
-git clone <(https://github.com/Gireesh-mlgs/RecipeSharingOnlinePlatform)>
-cd project
+bash
+git clone https://github.com/Gireesh-mlgs/RecipeSharingOnlinePlatform.git
+cd RecipeSharingOnlinePlatform
 
 
 You should now see:
 
 /frontend
 /backend
+
 
 2️⃣ Backend Setup (Node + Express + MongoDB)
 Step 1 — Navigate to Backend
@@ -170,43 +158,6 @@ const api = axios.create({
 
 
 This ensures all requests are sent to your backend.
-
-🗂️ Project Structure
-project/
-│
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── middleware/
-│   ├── routes/
-│   ├── uploads/
-│   ├── server.js
-│   ├── .env
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── .env
-│   └── package.json
-│
-└── README.md
-
-📸 Screenshots (Add as needed)
-
-You may add:
-
-Login Screen
-
-User Dashboard
-
-Recipe Upload Page
-
-Recipe Details Page
-
-Admin Dashboard
-
-Approval Panel
 
 
 🔗 API Endpoints (Sample)
