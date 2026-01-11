@@ -89,10 +89,6 @@ Each role has a **dedicated dashboard** with role-specific tools.
 
 ---
 
-Here is your **complete README.md** fully formatted in clean Markdown:
-
----
-
 # Recipe Sharing Online Platform 🍽️
 
 A complete MERN stack application for sharing recipes, managing users, and performing admin moderation.
